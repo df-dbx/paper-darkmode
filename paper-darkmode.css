@@ -1,5 +1,3 @@
-@-moz-document domain("paper.dropbox.com")
-{
 /*
  * Theme for Dropbox Paper - Dark Gray(Dropbox Paper)
  * Author  : Po Chun(Sky)
@@ -14,7 +12,7 @@
  ***********************************************/
 
 /* body & header & toolbar & table & bottom-right button & Task Button: background color */
-  body,
+body,
 #main-header-container,
 .main-header-right,
 .insert-rich-object-toolbar-wrapper .insert-toolbar-overlay,
@@ -27,47 +25,42 @@
 #hp-editor-exp-assist-buttons,
 #hp-tasks-button,
 a.dmc-button-secondary,
-.hp-menu
-  {
-    background-color: /*[[bgColor]]*/;
-  }
+.hp-menu {
+	background-color: #262626;
+}
 
 /* input preview & code block & hp-menu list(:hover) :background color */
-  .insert-toolbar-preview-image .insert-toolbar-preview-image-inner,
+.insert-toolbar-preview-image .insert-toolbar-preview-image-inner,
 .insert-toolbar-preview-image:hover .insert-toolbar-preview-image-inner ,
 .ace-line .insert-toolbar-preview,
 .ace-editor .line-list-type-code,
 code.listtype-code .insert-toolbar-preview-input,
-.hp-menu-standard>ul>li .hpx-button:hover
-  {
-    background-color: /*[[previewColor]]*/;
-  }
+.hp-menu-standard>ul>li .hpx-button:hover {
+	background-color: #131313;
+}
 
 /* Task List (Hover) : background color & font color*/
-@  media (min-width: 600px)
-  {
+@media (min-width: 600px) {
     .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-task.focused-line,
     .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-taskdone.focused-line,
     .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-task.ace-task-line-highlighted,
     .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-taskdone.ace-task-line-highlighted {
-		background-color: /*[[previewColor]]*/!important;
-    color: /*[[fontColor]]*/!important;
-  }
+		background-color:  #131313!important;
+        color: #EEEEEE!important;
+	}
 }
 
 /* main content & left sidebar & insert toolbar */
 .ace-editor ,
 .hp-toc .hp-toc-entries,
-.right-insert-toolbar-wrapper .insert-toolbar-overlay
-{
-  background: none;
+.right-insert-toolbar-wrapper .insert-toolbar-overlay {
+    background: none;
 }
 
 
 /* header : baseline */
-#main-header-container
-{
-  box-shadow: 0 1px rgba(255,255,255,0.5);
+#main-header-container {
+	box-shadow: 0 1px rgba(255,255,255,0.5);
 }
 
 
@@ -77,9 +70,8 @@ code.listtype-code .insert-toolbar-preview-input,
 
 /* main content : font family */
 .ace-editor,
-.ace-feature-bigtitle>.ace-editor>div:first-child
-{
-  font-family: /*[[fontFamily]]*/,AtlasGrotesk-editor,sans-serif;
+.ace-feature-bigtitle>.ace-editor>div:first-child {
+    font-family: monospace,AtlasGrotesk-editor,sans-serif;
 }
 
 /* main content & code & task due date font: font color */
@@ -93,46 +85,40 @@ body,
 .insert-button,
 .ace-line-task-controls-due-date-button,
 .hp-menu-standard>ul>li .hpx-button,
-.DayPicker
-{
-  color: /*[[fontColor]]*/;
+.DayPicker {
+	color: #EEEEEE;
 }
 
 /* header > folder name of this paper : font color */
 .hp-pad-folder a,
 .hp-pad-folder a:active,
 .hp-pad-folder a:link,
-.hp-pad-folder a:visited
-{
-  color: rgb(212, 212, 212);
+.hp-pad-folder a:visited {
+    color: rgb(212, 212, 212);
 }
 
 /* left sidebar > active link : font color */
 .hp-toc .hp-toc-entry-current .hp-toc-entry-link,
-.hp-toc .hp-toc-entry:hover .hp-toc-entry-link
-{
-  color: rgb(22, 255, 9);
+.hp-toc .hp-toc-entry:hover .hp-toc-entry-link {
+    color: rgb(22, 255, 9);
 }
 
 /* Comment font highlight : font color */
 body.show-comments span.attrcomment,
-body.underline-comments span.attrcomment
-{
-  border-bottom-color: rgb(50, 166, 89);
-  background-color: /*[[comHighlightColor]]*/!important;
+body.underline-comments span.attrcomment{
+	border-bottom-color: rgb(50, 166, 89);
+    background-color: #505050!important;
 }
 
 /* highlight : font color & custom bg color*/
-.highlight, .highlight.code, .highlight.inline-code
-{
-  color: /*[[bgColor]]*/;
-    background-color: /*[[highlightColor]]*/;
+.highlight, .highlight.code, .highlight.inline-code {
+    color: #262626;
+    background-color: #D6E8FA;
 }
 
 /* icon color */
-.dmc-button .svg-icon
-{
-  fill: /*[[iconColor]]*/;
+.dmc-button .svg-icon {
+    fill: #34AF5D;
 }
 
 /***********************************************
@@ -140,14 +126,10 @@ body.underline-comments span.attrcomment
  ***********************************************/
 
 /* hide the scroll-bar of left sidebar */
-.hp-toc::-webkit-scrollbar
-{
-  display: none;
+.hp-toc::-webkit-scrollbar {
+    display: none;
 }
 
-.right-insert-toolbar-wrapper .insert-toolbar-overlay::before
-{
-  background: none;
-}
-
+.right-insert-toolbar-wrapper .insert-toolbar-overlay::before {
+	background: none;
 }
