@@ -69,10 +69,10 @@ code.listtype-code .insert-toolbar-preview-input,
  ***********************************************/
 
 /* main content : font family */
-.ace-editor,
-.ace-feature-bigtitle>.ace-editor>div:first-child {
-    font-family: monospace,AtlasGrotesk-editor,sans-serif;
-}
+/* .ace-editor,
+ * .ace-feature-bigtitle>.ace-editor>div:first-child {
+ *  font-family: monospace,AtlasGrotesk-editor,sans-serif;
+}*/
 
 /* main content & code & task due date font: font color */
 body,
