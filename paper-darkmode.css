@@ -106,7 +106,7 @@ body,
 /* Comment font highlight : font color */
 body.show-comments span.attrcomment,
 body.underline-comments span.attrcomment{
-	border-bottom-color: rgb(50, 166, 89);
+	border-bottom-color: #d0ff00;
     background-color: #505050!important;
 }
 
